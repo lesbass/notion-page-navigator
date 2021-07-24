@@ -14,7 +14,7 @@ The reference database is:
 
 https://lesbass.notion.site/778479d27c4b4c28bf28d928994a28e0?v=a0b83aae9cd54610abff7135c98f3283
 
-Here's a demo of the application running on Netlify:
+Here's a demo of the application running on Netlify (TTS Api key is not set, so TTS is not working):
 
 https://serene-williams-ae9b62.netlify.app/
 
