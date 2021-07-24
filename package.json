@@ -1,0 +1,87 @@
+{
+  "name": "notion-fisio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@google-cloud/text-to-speech": "^3.2.6",
+    "@material-ui/core": "next",
+    "@material-ui/icons": "next",
+    "@material-ui/lab": "next",
+    "@notionhq/client": "^0.2.2",
+    "@types/classnames": "^2.3.1",
+    "@types/node": "^16.3.2",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "axios": "^0.21.1",
+    "classnames": "^2.3.1",
+    "lodash": "^4.17.21",
+    "memory-cache": "^0.2.0",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.1",
+    "next": "latest",
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-audio-player": "^0.17.0",
+    "react-countdown-circle-timer": "^2.5.3",
+    "react-dom": "^17.0.2",
+    "react-easy-swipe": "^0.0.22",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.171",
+    "@types/memory-cache": "^0.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-chai-friendly": "^0.7.1",
+    "eslint-plugin-flowtype": "^5.8.0",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-sort-destructure-keys": "^1.3.5",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "eslint-plugin-typescript-sort-keys": "^1.7.0",
+    "eslint-plugin-unused-imports": "^1.1.2",
+    "lint-staged": "^11.0.1",
+    "prettier": "^2.3.2",
+    "prettier-eslint-cli": "^5.0.1",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --ext .ts,.tsx .",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier --write ./src/*",
+    "build_tsc": "tsc --project tsconfig.json"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{css,scss,md}": [
+      "prettier --write"
+    ],
+    "*.{js,ts,tsx,json}": [
+      "prettier-eslint --prettier-last --write"
+    ]
+  }
+}
