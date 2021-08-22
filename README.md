@@ -1,6 +1,6 @@
 # Notion Page Navigator
 
-This is a simple React/Next.js application which lets people create a card-style navigation around a basic Notion Database.
+This is a React/Next.js application which lets people create a card-style navigation around a basic Notion Database.
 It was originally meant to be used for going through a list of fitness exercises on a smartphone, so I implemented the below features:
 - show the page number on the total count
 - quickly go back to the first page
