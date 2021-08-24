@@ -48,7 +48,7 @@ export const initApi = (): Gateway => ({
       const current_pages = await notion.request<BlocksResultModel>(request_payload)
 
       for (const result of current_pages.results) {
-        if (result.type !== 'unsupported') {
+        if (result.type == 'paragraph') {
           const text = result.paragraph.text[0]?.text?.content
           if (text) {
             blocks.push(text)
